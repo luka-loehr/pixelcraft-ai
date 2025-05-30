@@ -1,0 +1,13 @@
+# Indicate that .dart files should be treated as the primary language
+*.dart linguist-language=Dart
+
+# De-prioritize or ignore Xcode project files for language statistics
+ios/** linguist-vendored
+*.xcodeproj linguist-vendored
+*.xcworkspace linguist-vendored
+
+# De-prioritize Pods (iOS dependencies)
+ios/Pods/** linguist-vendored
+
+# You can add similar rules for Android if needed, for example:
+# android/** linguist-vendored 
