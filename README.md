@@ -1,4 +1,4 @@
-# PixelCraft AI ஆर्ट 🎨
+# PixelCraft AI 🎨
 
 PixelCraft AI is a Flutter application that generates unique pixel art images based on user prompts using Google's Imagen model via the Gemini API. Users can enter a text prompt, generate an image, view it within the app, and save it to their device's photo library.
 
