@@ -91,15 +91,32 @@ Once the setup is complete, you can run the application on various platforms.
     *   Connect your Android device via USB (ensure Developer Options and USB Debugging are enabled on the device).
     *   Run the app: `flutter run` (Flutter should auto-detect your connected device).
 
-### Desktop (Experimental)
+## Adding Desktop Support (Optional)
 
-While not explicitly configured in this iteration, Flutter supports desktop platforms (Windows, macOS, Linux). You can enable them via:
-```bash
-flutter config --enable-<platform>-desktop # e.g., --enable-macos-desktop
-flutter create . # To generate platform-specific files if not present
-flutter run -d <platform> # e.g., -d macos
-```
-Further configuration might be needed.
+This project is primarily configured for Web, iOS, and Android. If you wish to run it on a desktop platform (Windows, macOS, or Linux), you can add support by following these steps:
+
+1.  **Enable Desktop Support for Flutter**:
+    Open your terminal and run the command for the platform you want to enable (e.g., for macOS):
+    ```bash
+    flutter config --enable-macos-desktop
+    ```
+    Replace `macos` with `windows` or `linux` as needed.
+
+2.  **Create Platform-Specific Files**:
+    In your project's root directory (`pixelcraft-ai`), run:
+    ```bash
+    flutter create .
+    ```
+    This command will generate the necessary platform-specific files and directories (e.g., `macos/`, `windows/`, or `linux/`).
+
+3.  **Run the Application**:
+    Once the platform support is added and files are generated, you can run the application on the chosen desktop platform:
+    ```bash
+    flutter run -d macos
+    ```
+    Replace `macos` with `windows` or `linux` as appropriate.
+
+    Additional configuration or troubleshooting might be needed depending on your specific desktop environment and Flutter setup.
 
 ## License
 
