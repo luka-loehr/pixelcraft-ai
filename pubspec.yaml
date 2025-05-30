@@ -1,0 +1,19 @@
+name: pixelcraft_ai
+environment:
+  sdk: '^3.8.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.1 # For making HTTP requests
+  flutter_dotenv: ^5.1.0 # For managing API keys
+  file_saver: ^0.2.9 # For saving files
+  path_provider: ^2.0.11 # For finding local paths
+  google_fonts: ^6.2.1 # For custom fonts
+  transparent_image: ^2.0.1 # For image placeholders
+  image_gallery_saver: ^2.0.3 # Added for saving to gallery
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env # Declare .env as an asset

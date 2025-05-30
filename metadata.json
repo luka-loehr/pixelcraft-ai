@@ -1,0 +1,5 @@
+{
+  "name": "PixelCraft AI",
+  "description": "An application that uses Imagen API to generate pixel art from text prompts. Enter a description and watch it transform into unique pixel art creations.",
+  "requestFramePermissions": []
+}
